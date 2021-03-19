@@ -165,7 +165,7 @@ def preprocess_owt_job(
 @dataclass(frozen=True)
 class Args:
     src_dir: arg.Str = "data/openwebtextsm"
-    trg_dir: arg.Str = "data/openwebtextsm_features"
+    trg_dir: arg.Str = "data/openwebtextsm2_features"
     tmp_dir: arg.Str = "/tmp/owt"
     vocab_file: arg.Str = "data/vocab.txt"
     n_dataset_building_processes: arg.Int = 32

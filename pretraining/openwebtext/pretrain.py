@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class Args:
-    data_dir: arg.Str = 'data/openwebtext_features'
+    data_dir: arg.Str = 'data/openwebtextsm_features'
     data_vocab_file: arg.Str = 'data/vocab.txt'
     data_n_tensors_per_file: arg.Int = 2048
     data_max_seq_length: arg.Int = 128
@@ -38,7 +38,7 @@ class Args:
     gpu_deterministic: arg.Bool = False
     gpu_mixed_precision: arg.Bool = False
     distributed_port: arg.Int = 8888
-    distributed_enabled: arg.Bool = True
+    distributed_enabled: arg.Bool = False #True
     distributed_world_size: arg.Int = 4
 
     model_generator: arg.Str = 'pretraining/openwebtext/small_generator.json'
